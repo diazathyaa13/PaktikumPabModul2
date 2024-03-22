@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"> <!-- Warna latar belakang biru -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!-- Bagian judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator Penghitung Gaji"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#9C27B0"
+            android:textColor="#FFFFFF" /> <!-- Warna latar belakang ungu -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukkan Nama Anda :"
+                android:textColor="#FF5733" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isikan Nama Lengkap Anda" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Sudah Menikah ?"
+                android:textColor="#FF5733" />
+
+            <CheckBox
+                android:id="@+id/menikah"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Menikah"
+                android:textColor="#FF5733" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Golongan"
+                android:textColor="#FF5733" />
+
+            <RadioGroup
+                android:id="@+id/rgGolongan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbGolongan1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Golongan 1"
+                    android:checked="true"
+                    android:textColor="#FF5733" />
+
+                <RadioButton
+                    android:id="@+id/rbGolongan2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Golongan 2"
+                    android:textColor="#FF5733" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/hitung"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="hitung"
+                android:background="#FFC300"
+                android:text="Hitung Gaji" />
+
+            <TextView
+                android:id="@+id/outputNama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FF5733"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/outputStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FF5733"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/outputGolongan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#FF5733"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/outputGaji"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF5733"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
